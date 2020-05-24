@@ -1,3 +1,9 @@
 #logo{
     border-radius:50px;
 }
+
+#navbar-nav{
+    text-align: center;
+    margin-right: -15px;
+  margin-left: -15px;
+}
