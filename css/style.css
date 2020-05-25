@@ -5,3 +5,16 @@
 #banniere{
     text-align: center;
 }
+
+.container{
+    text-align: center;
+}
+
+.pic-grid{
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
