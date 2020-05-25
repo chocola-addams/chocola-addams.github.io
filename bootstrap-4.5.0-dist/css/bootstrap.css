@@ -6590,7 +6590,7 @@ a.close.disabled {
 }
 
 .carousel-indicators li {
-  box-sizing: border-box;
+  box-sizing: content-box;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   width: 30px;
