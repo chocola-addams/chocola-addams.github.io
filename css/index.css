@@ -1,0 +1,41 @@
+/*INDEX*/
+
+.img-index {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  background-size: cover;
+}
+
+.col{
+    width: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.col:hover .img-index {
+  opacity: 0.3;
+}
+
+.col:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
