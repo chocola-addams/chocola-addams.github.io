@@ -11,6 +11,13 @@
 }
 
 /*Social icones*/
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+li{
+  display: inline;
+}
 .icone-social{
     height: 30px;
     width: 30px;
@@ -20,7 +27,7 @@
     opacity: 0.8;
   }
   
-/* Create two equal columns that sits next to each other */
+/* Create three equal columns that sits next to each other */
 .column {
     -ms-flex: 33%; /* IE 10 */
     flex: 33%;

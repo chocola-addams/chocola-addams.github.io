@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/general-style.css">
-
+    <link rel="stylesheet" href="../css/album-photo-grid.css">
+    <script src="../js/album-photo-grid.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto mr-auto">
                 <li class="nav-item">
@@ -41,7 +42,8 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="../derriere-la-feuille/webtoon.html">Webtoon</a>
-                        <a class="dropdown-item" href="../derriere-la-feuille/socrates.html">SOCRATE(S), Ciéron c'est pas carré</a>
+                        <a class="dropdown-item" href="../derriere-la-feuille/socrates.html">SOCRATE(S), Ciéron c'est
+                            pas carré</a>
                         <a class="dropdown-item" href="../derriere-la-feuille/illustration.html">Illustration</a>
                         <a class="dropdown-item" href="../derriere-la-feuille/audiovisuel.html">Audiovisuel</a>
                     </div>
@@ -52,27 +54,158 @@
                         Devant l'objectif de
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="">Kirby Vanquin</a>
-                        <a class="dropdown-item" href="studio-313.html">Studio 313</a>
+                        <a class="dropdown-item" href="kirby-vanquin.html">Kirby Vanquin</a>
+                        <a class="dropdown-item" href="">Studio 313</a>
                     </div>
                 </li>
-                
+
                 <li class="nav-item">
-                    <a target="_blank" class="nav-link" href="https://www.instagram.com/chocola_tahiti/"><img id="instagram" src="../img/instagram.png" width="30" height="30"></a>
+                    <a target="_blank" class="nav-link" href="https://www.instagram.com/chocola_tahiti/"><img
+                            id="instagram" src="../img/instagram.png" width="30" height="30"></a>
                 </li>
                 <li class="nav-item">
-                    <a target="_blank" class="nav-link" href="https://www.youtube.com/channel/UCak6w-iRyb28YD1N4Po-0Wg"><img id="youtube" src="../img/youtube.png" width="30" height="30"></a>
+                    <a target="_blank" class="nav-link"
+                        href="https://www.youtube.com/channel/UCak6w-iRyb28YD1N4Po-0Wg"><img id="youtube"
+                            src="../img/youtube.png" width="30" height="30"></a>
                 </li>
                 <li class="nav-item">
-                    <a target="_blank" class="nav-link" href="https://www.facebook.com/xXChocolaXx/"><img id="facebook" src="../img/facebook.png" width="30" height="30"></a>
+                    <a target="_blank" class="nav-link" href="https://www.facebook.com/xXChocolaXx/"><img id="facebook"
+                            src="../img/facebook.png" width="30" height="30"></a>
                 </li>
             </ul>
         </div>
 
     </nav>
 
-    <!--CONTENT-->
-    <p text-align="center">Kiby Vanquin</p>
+    <!-- CONTENT -->
+    <div class="container">
+        <h1>Devant l'objectif de</h1>
+        <hr>
+        <h2>Kirby Vanquin - 
+            <a href="https://facebook.com/kirby.vanquin.photo" target="_black"><img class="icone-social"
+                            src="../img/facebook.png"></a>
+            <a href="https://instagram.com/kirby.vanquin" target="_black"><img class="icone-social"
+                            src="../img/instagram2.png"></a>
+            <a href="https://www.pinterest.fr/kirby_vanquin" target="_black"><img class="icone-social"
+                            src="../img/pinterest.png"></a>
+            <a href="https://kirbyvanquin.tumblr.com" target="_black"><img class="icone-social"
+                            src="../img/tumblr logo.png"></a>
+        </h2>
+
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <img src="../img/photos/kirby-vanquin/VNK2017-06-28_7888.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="../img/photos/kirby-vanquin/VNK2017-06-28_7921.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(4)" class="hover-shadow">
+                <img src="../img/photos/kirby-vanquin/VNK2017-06-28_7942.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(7)" class="hover-shadow">
+                <img src="../img/photos/kirby-vanquin/VNK2017-06-28_7977.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(10)" class="hover-shadow">
+                <img src="../img/photos/kirby-vanquin/1781318_640608735998622_1402130466_n.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(13)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="../img/photos/kirby-vanquin/VNK2017-06-28_7875.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="../img/photos/kirby-vanquin/VNK2017-06-28_7931.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(5)" class="hover-shadow">
+                <img src="../img/photos/kirby-vanquin/VNK2017-06-28_7965.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="../img/photos/kirby-vanquin/dresseuse pkmn.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(11)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="../img/photos/kirby-vanquin/VNK2017-06-28_7890.jpg" style=" width:100%"
+                    onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <img src="../img/photos/kirby-vanquin/VNK2017-06-28_7938.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(6)" class="hover-shadow">
+                <img src="../img/photos/kirby-vanquin/VNK2017-06-28_7967.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(9)" class="hover-shadow">
+                <img src="../img/photos/kirby-vanquin/nouvel an chinois 2014.jpg" style="width:100%"
+                    onclick="openModal();currentSlide(12)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4 - 2017</div>
+                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7888.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4 - 2017</div>
+                    <img class="modal-img" src="../img/photos/kirby-vanquin/VNK2017-06-28_7875.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4 - 2017</div>
+                    <img class="modal-img" src="../img/photos/kirby-vanquin/VNK2017-06-28_7890.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4 - 2017</div>
+                    <img class="modal-img"
+                        src="../img/photos/kirby-vanquin/VNK2017-06-28_7921.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 4 - 2017</div>
+                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7931.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 4 - 2017</div>
+                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7938.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 4 - 2017</div>
+                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7942.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 4 - 2017</div>
+                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7965.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 4 - 2017</div>
+                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7967.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 4 - 2017</div>
+                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7977.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">11 / 4 - 2014</div>
+                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/dresseuse pkmn.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">12 / 4 - 2014</div>
+                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/nouvel an chinois 2014.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">13 / 4 - 2014</div>
+                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/1781318_640608735998622_1402130466_n.jpg">
+                </div>
+
+
+                <!-- Next/previous controls -->
+                <a class="prev text-white" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next text-white" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
 
     <!--SCRIPTS NECESSAIRES A BOOTSTRAP-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
