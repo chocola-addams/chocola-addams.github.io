@@ -57,10 +57,10 @@ function showGrid(jsonObj) {
   row.appendChild(col1);
   row.appendChild(col2);
   row.appendChild(col3);
-  for (var i = 0; i < photos.length/3+1; i++) {
-    row.col1.appendChild("i")
-    row.col1.appendChild("i+1")
-    row.col1.appendChild("i+2")
+  for (var i = 0; i < photos.length+2; i+3) {
+    row.col1.appendChild(photos[i+0])
+    row.col2.appendChild(photos[i+1])
+    row.col3.appendChild(photos[i+2])
   };
   grid.appendChild(row);
 }
