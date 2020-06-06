@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
   
-.row {
+#row {
     display: -ms-flexbox; /* IE 10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE 10 */
@@ -37,6 +37,7 @@ li{
 .column img {
     margin-top: 8px;
     vertical-align: middle;
+    width: 100%;
 }
 
 /*Image selection*/
