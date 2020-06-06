@@ -37,6 +37,7 @@ function showSlides(n) {
 
 /* PHOTO GRID TEST */
 /*récupération des données de bdd-image.json*/
+var grid = document.querySelector('grid')
 var requestURL = 'https://github.com/chocola-addams/chocola-addams.github.io/tree/master/json/bdd-mage.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -49,17 +50,17 @@ request.onload = function () {
 /*création de la grille*/
 function showGrid(jsonObj) {
   var photos = jsonObj['photos'];
-  var row = document.createElement('div');
+  var row = document.createElement('div').setAttribute('class','row');
   var col1=document.createElement('div').setAttribute('class','column');
   var col2=document.createElement('div').setAttribute('class','columnl');
   var col3=document.createElement('div').setAttribute('class','column');
-  document.getElementsByClassName("row").appendChild(row);
-  row.appendChild(col1)
-  row.appendChild(col2)
-  row.appendChild(col3)
+  row.appendChild(col1);
+  row.appendChild(col2);
+  row.appendChild(col3);
   for (var i = 0; i < photos.length/3+1; i++) {
     row.col1.appendChild("i")
     row.col1.appendChild("i+1")
     row.col1.appendChild("i+2")
-  }
+  };
+  grid.appendChild(row);
 }
