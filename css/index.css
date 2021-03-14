@@ -10,11 +10,7 @@
   background-size: cover;
 }
 
-.row{
-  height: border-box;
-}
-
-.col-sm-6{
+.col-index{
     padding:0px;
 }
 
