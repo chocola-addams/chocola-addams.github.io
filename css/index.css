@@ -10,6 +10,10 @@
   background-size: cover;
 }
 
+.row-index{
+  height: border-box;
+}
+
 .col-index{
     padding:0px;
 }
