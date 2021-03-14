@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src="../js/album-photo-grid.js"></script>
+    <script src="../js/album-photo-grid-json.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -80,96 +80,26 @@
 
     <!-- CONTENT -->
     <div class="container">
-        <div class="container">
-            <h1>Devant l'objectif de</h1>
-            <hr>
-            <h2>Kirby Vanquin -
-                <a href="https://facebook.com/kirby.vanquin.photo" target="_black"><img class="icone-social"
-                        src="../img/facebook.png"></a>
-                <a href="https://instagram.com/kirby.vanquin" target="_black"><img class="icone-social"
-                        src="../img/instagram2.png"></a>
-                <a href="https://www.pinterest.fr/kirby_vanquin" target="_black"><img class="icone-social"
-                        src="../img/pinterest.png"></a>
-                <a href="https://kirbyvanquin.tumblr.com" target="_black"><img class="icone-social"
-                        src="../img/tumblr logo.png"></a>
-            </h2>
-            
-            <!-- Photo Grid -->
-            <div class="row" id="row"></div>
-        </div>
+        <h1>Devant l'objectif de</h1>
+        <hr>
+        <h2>Kirby Vanquin TEST JSON-
+            <a href="https://facebook.com/kirby.vanquin.photo" target="_black"><img class="icone-social"
+                    src="../img/facebook.png"></a>
+            <a href="https://instagram.com/kirby.vanquin" target="_black"><img class="icone-social"
+                    src="../img/instagram2.png"></a>
+            <a href="https://www.pinterest.fr/kirby_vanquin" target="_black"><img class="icone-social"
+                    src="../img/pinterest.png"></a>
+            <a href="https://kirbyvanquin.tumblr.com" target="_black"><img class="icone-social"
+                    src="../img/tumblr logo.png"></a>
+        </h2>
+
+        <!-- Photo Grid -->
+        <div class="row" id="row"></div>
 
         <!-- The Modal/Lightbox -->
         <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-
-                <div class="mySlides">
-                    <div class="numbertext">1 / 13 - 2017</div>
-                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7888.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">2 / 13 - 2017</div>
-                    <img class="modal-img" src="../img/photos/kirby-vanquin/VNK2017-06-28_7875.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3 / 13 - 2017</div>
-                    <img class="modal-img" src="../img/photos/kirby-vanquin/VNK2017-06-28_7890.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">4 / 13 - 2017</div>
-                    <img class="modal-img" src="../img/photos/kirby-vanquin/VNK2017-06-28_7921.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">5 / 13 - 2017</div>
-                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7931.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">6 / 13 - 2017</div>
-                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7938.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">7 / 13 - 2017</div>
-                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7942.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">8 / 13 - 2017</div>
-                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7965.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">9 / 13 - 2017</div>
-                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7967.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">10 / 13 - 2017</div>
-                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/VNK2017-06-28_7977.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">11 / 13 - 2014</div>
-                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/dresseuse pkmn.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">12 / 13 - 2014</div>
-                    <img class="modal-img ml-auto mr-auto" src="../img/photos/kirby-vanquin/nouvel an chinois 2014.jpg">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">13 / 13 - 2014</div>
-                    <img class="modal-img ml-auto mr-auto"
-                        src="../img/photos/kirby-vanquin/1781318_640608735998622_1402130466_n.jpg">
-                </div>
-
-
+            <div class="modal-content" id="modal-content">
                 <!-- Next/previous controls -->
                 <a class="prev text-white" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next text-white" onclick="plusSlides(1)">&#10095;</a>
